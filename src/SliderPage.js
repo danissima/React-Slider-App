@@ -20,7 +20,7 @@ export default class SliderPage extends Component {
             <h2>Слайдер</h2>
             <Link to="/">Назад</Link>
             <Carousel className='slider'>
-                 {items.map(item => <div key={item.id}><img src={item.src} /></div>)}
+                 {items.map(item => <div key={item.id}><img className='img' src={item.src} /></div>)}
             </Carousel>
           </div>
         );
