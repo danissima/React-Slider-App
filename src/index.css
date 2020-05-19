@@ -15,3 +15,11 @@ code {
 .slider {
     margin-top: 50px;
 }
+
+.slider_item {
+    height: 50vh;
+}
+
+.img {
+    height: 100%;
+}
