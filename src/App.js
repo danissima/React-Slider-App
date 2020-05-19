@@ -7,8 +7,8 @@ import {
   useRouteMatch,
   useParams
 } from "react-router-dom";
-import Home from './Home.js';
-import Slider from './Slider.js';
+import HomePage from './HomePage.js';
+import SliderPage from './SliderPage.js';
 
 export default function App() {
   return (
@@ -19,16 +19,16 @@ export default function App() {
             <Link to="/">Главная</Link>
           </li>
           <li>
-            <Link to="/slider">Слайдер</Link>
+            <Link to="/slider-page">Слайдер</Link>
           </li>
         </ul>
 
         <Switch>
-          <Route path="/slider">
-            <Slider />
+          <Route path="/slider-page">
+            <SliderPage />
           </Route>
           <Route path="/">
-            <Home />
+            <HomePage />
           </Route>
         </Switch>
       </div>
