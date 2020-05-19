@@ -7,6 +7,8 @@ import {
   useRouteMatch,
   useParams
 } from "react-router-dom";
+import Home from './Home.js';
+import Slider from './Slider.js';
 
 export default function App() {
   return (
@@ -34,20 +36,3 @@ export default function App() {
   );
 }
 
-function Home() {
-  return (
-      <div>
-        <h2>Приветствую на главной странице</h2>
-        <Link to="/slider">Перейти на слайдер</Link>
-      </div>
-         );
-}
-
-function Slider() {
-  return (
-      <div>
-        <h2>Слайдер</h2>
-        <Link to="/home">Назад</Link>
-      </div>
-  );
-}
